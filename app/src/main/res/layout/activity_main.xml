@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Т в комнате"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="---"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textSize="80dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="serif"
+            android:text="Т наружная"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="---"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:textSize="80dp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:background="#C62828"
+            android:fontFamily="serif"
+            android:text="Alarm!"
+            android:textAlignment="center"
+            android:textColor="#F3D74E"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:background="#EDA2A2"
+            android:fontFamily="serif"
+            android:text="--------------"
+            android:textAlignment="center"
+            android:textColor="#F3D74E"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:button="@android:drawable/ic_notification_overlay"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="Перелив!"
+                    android:textColor="@color/y"
+                    android:textSize="10dp"
+                    android:checked="true"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:checked="true"
+                    android:button="@android:drawable/ic_notification_overlay" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:checked="true"
+                    android:button="@android:drawable/ic_notification_overlay" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:checked="true"
+                    android:button="@android:drawable/ic_notification_overlay" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:checked="true"
+                    android:button="@android:drawable/ic_notification_overlay" />
+
+                <RadioButton
+                    android:id="@+id/radioButton0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.06"
+                    android:button="@android:drawable/ic_notification_overlay"
+                    android:text="Протечка!"
+                    android:textColor="@color/y"
+                    android:textSize="10dp"
+                    android:checked="true"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <!--
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:alpha="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/draw_imagebutton_freezing0" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:alpha="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/draw_imagebutton_ligthing0" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:alpha="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/draw_imagebutton_pump" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:alpha="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/draw_imagebutton_watering" />
+
+-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
