@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String BROADCAST_ACTION = "com.example.wellcome";
+    public static final String BROADCAST_ACTION = "com.example.oldphonedisplay";
     private static Handler handler;
     final String LOG_TAG = "==FullscreenActivity==";
     TextView textView2;
