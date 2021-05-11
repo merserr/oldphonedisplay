@@ -143,8 +143,19 @@ public class MainActivity extends AppCompatActivity {
             int index_out_1 = content.indexOf("in1") + 4;
             int index_out_2 = content.indexOf("&in2");
 
-            String tin = content.substring(index_tin_1, index_tin_2);
-            String tout = content.substring(index_out_1, index_out_2);
+            String tin;
+            String tout;
+
+            if(index_tin_1>0 && index_tin_2>0) {
+                tin = content.substring(index_tin_1, index_tin_2);
+            }else{
+               tin = "no data";
+            }
+            if(index_out_1>0 && index_out_2>0) {
+                tout = content.substring(index_out_1, index_out_2);
+            }else{
+                tout = "no data";
+            }
             //int indexbox = content.indexOf("heatingbox=") + 13;
             int indexL5 = content.indexOf("lev5") + 5;
             int indexL4 = content.indexOf("lev4") + 5;
